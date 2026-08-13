@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
 	
 	printf("Estes numeros na ordem inversa sao: %d, %d", num2, num1);
 	
-	system("cls");
+	system("cls"); //limpa o terminal para o proximo exercicio
 	*/
 	
 	//exercicio 8
