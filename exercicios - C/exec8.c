@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
 	printf("Digite a primeira coordenada y: ");
 	scanf("%lf", &coordY1);
 
-  printf("Digite a segunda coordenada x: ");
+  	printf("Digite a segunda coordenada x: ");
 	scanf("%lf", &coordX2);
 	
 	printf("Digite a segunda coordenada y: ");
