@@ -3,13 +3,13 @@ print("-----------------------")
 print("Cadastro:")
 
 user = input("Digite seu usuario: ")
-senha = int(input("Digite sua senha: "))
+senha = input("Digite sua senha: ")
 
 print("-----------------------")
 print("Login:")
 
 user_login = input("Digite seu usuario de login: ")
-senha_login = int(input("Digite sua senha de login: "))
+senha_login = input("Digite sua senha de login: ")
 
 
 if user_login.lower() == user:
@@ -25,4 +25,4 @@ else:
 if user_authorized and senha_authorized:
     print("Bem vindo!")
 else:
-    print("Usuario ou senha incorretos!")
+    print("Usuario ou senha incorreto!")
