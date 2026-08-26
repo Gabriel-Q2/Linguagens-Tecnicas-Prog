@@ -124,9 +124,9 @@ int main(int argc, char *argv[]) {
 
 	// exercicio 5
 	int num1, num2, num3, num4, soma, media, prod;
-	/*
+	
 	printf("Digite quatro numeros (com espacamento): \n");
-	scanf("%d %d %d %d", &num1, &num2, &num3, num4);
+	scanf("%d %d %d %d", &num1, &num2, &num3, &num4);
 
 	soma = num1 + num2 + num3 + num4;
 	media = (num1 + num2 + num3 + num4) / 4;
@@ -143,7 +143,7 @@ int main(int argc, char *argv[]) {
   	printf("------------------------\n");
 	
 	system("cls");
-	*/
+	
 	//exercicio 6
 	int dias, meses, anos; 
     
