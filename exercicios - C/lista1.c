@@ -5,15 +5,15 @@
 int main(int argc, char *argv[]) {
 	
 	// exercicio 1
-	int num1, num2, teste;
+	int numero1, numero2, teste;
 	
 	printf("Digite o primeiro numero: ");
-	scanf("%d", &num1);
+	scanf("%d", &numero1);
 	
 	printf("Digite o segundo numero: ");
-	scanf("%d", &num2);
+	scanf("%d", &numero2);
 	
-	printf("Estes numeros na ordem inversa sao: %d, %d", num2, num1);
+	printf("Estes numeros na ordem inversa sao: %d, %d", numero2, numero1);
   	
 	printf("\n");
 
@@ -34,12 +34,12 @@ int main(int argc, char *argv[]) {
 
 	printf("Insira qualquer coisa para continuar para continuar.\n");
 	scanf("%d", &teste);
-  printf("------------------------\n");
+  	printf("------------------------\n");
 	
 	system("cls");
 
   //exercicio 3
-  int n, valor, resto;
+  	int n, valor, resto;
     int b64, b32, b16, b8, b4, b2, b1;
 
     printf("Digite um numero positivo (n <= 64): ");
@@ -93,7 +93,116 @@ int main(int argc, char *argv[]) {
 
     printf("\n");
 
-  
+	printf("Insira qualquer coisa para continuar para continuar.\n");
+	scanf("%d", &teste);
+  	printf("------------------------\n");
+	
+	system("cls");
+
+	// exercicio 4
+	float salario, vendas, comissao, total;
+
+    printf("Quanto voce ganha de salario: \n");
+    scanf("%f", &salario);
+
+    printf("Qual o valor das vendas esse mes: \n");
+    scanf("%f", &vendas);
+
+    comissao = 0.15 * (salario + vendas);
+
+    total = comissao + salario;
+
+    printf("Esse e seu salario: \n%.2f \n", total);
+
+	printf("\n");
+
+	printf("Insira qualquer coisa para continuar para continuar.\n");
+	scanf("%d", &teste);
+  	printf("------------------------\n");
+	
+	system("cls");
+
+	// exercicio 5
+	int num1, num2, num3, num4, soma, media, prod;
+	/*
+	printf("Digite quatro numeros (com espacamento): \n");
+	scanf("%d %d %d %d", &num1, &num2, &num3, num4);
+
+	soma = num1 + num2 + num3 + num4;
+	media = (num1 + num2 + num3 + num4) / 4;
+	prod = num1 * num2 * num3 * num4;
+	
+	printf("A soma entre os numeros e: %d \n", soma);
+	printf("A media entre os numeros e: %d \n", media);
+	printf("O produtorio entre os numeros e: %d \n", prod);
+
+	printf("\n");
+
+	printf("Insira qualquer coisa para continuar para continuar.\n");
+	scanf("%d", &teste);
+  	printf("------------------------\n");
+	
+	system("cls");
+	*/
+	//exercicio 6
+	int dias, meses, anos; 
+    
+    printf("Quantos dias voce viveu? ");
+    scanf("%d", &dias);
+	
+	anos = dias / 365;
+	meses = dias / 30;
+	
+	printf("\nVoce viveu %.1d dias.", dias);
+	printf("\nVoce viveu %.1d meses.", meses);
+	printf("\nVoce viveu %.1d anos.", anos);
+
+	 printf("\n");
+
+	printf("Insira qualquer coisa para continuar para continuar.\n");
+	scanf("%d", &teste);
+  	printf("------------------------\n");
+	
+	system("cls");
+
+	//exercicio 7
+	float raio, volume;
+	float pi = 3.14159;
+	
+	printf("Digite o valor do raio de uma esfera, para calcularmos o volume: \n");
+	scanf("%f", &raio);
+	
+	volume = (4/3.0) * pi * pow(raio, 3);
+	
+	printf("O volume da esfera de raio %.2f e igual a %.2f \n", raio, volume);
+
+	printf("Insira qualquer coisa para continuar para continuar.\n");
+	scanf("%d", &teste);
+    printf("------------------------\n");
+	
+	system("cls");
+
+	//exercicio 8
+	double coordX1, coordX2, coordY1, coordY2, expo1, expo2, dist;
+	
+	printf("Digite a primeira coordenada x: ");
+	scanf("%lf", &coordX1);
+	
+	printf("Digite a primeira coordenada y: ");
+	scanf("%lf", &coordY1);
+
+  	printf("Digite a segunda coordenada x: ");
+	scanf("%lf", &coordX2);
+	
+	printf("Digite a segunda coordenada y: ");
+	scanf("%lf", &coordY2);
+	
+	dist = sqrt((pow(coordX1-coordX2, 2)) + (pow((coordY1-coordY2), 2)));
+	
+	printf("A distancia entre os pontos e de: %.2f\n", dist);
+
+	printf("FIM DA LISTA.\n");
+    printf("------------------------\n");
 
   return 0;
 }	
