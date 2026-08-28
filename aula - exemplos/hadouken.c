@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
 				sub = a - b;
 				mult = a * b;
 				div = a / b;
-				print("Soma: %d, Sub: %d, Multi: %d, Div: %d.\n", sum, sub, mult, div);
+				printf("Soma: %d, Sub: %d, Multi: %d, Div: %d.\n", sum, sub, mult, div);
 			}
 		} else {
 			if (a % b == 0) printf("Sim\n"); else printf("Nao\n");
