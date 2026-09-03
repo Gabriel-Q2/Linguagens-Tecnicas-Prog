@@ -1,0 +1,271 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+void exe1() {
+	int numero1, numero2, teste;
+				
+	printf("Digite o primeiro numero: ");
+	scanf("%d", &numero1);
+				
+	printf("Digite o segundo numero: ");
+	scanf("%d", &numero2);
+				
+	printf("Estes numeros na ordem inversa sao: %d, %d", numero2, numero1);
+			  	
+	printf("\n");
+			
+	printf("Insira qualquer coisa para continuar para continuar.\n");
+	scanf("%d", &teste);
+	 printf("------------------------\n");
+				
+	system("cls"); //limpa o terminal para o proximo exercicio	
+}
+
+void exe2() {
+	double nota;
+	int teste;
+					
+	printf("Digited um valor do tipo DOUBLE: ");
+	scanf("%lf", &nota);
+	printf("A notacao cientifica e: %.2e\n", nota);
+			
+	printf("\n");
+			
+	printf("Insira qualquer coisa para continuar para continuar.\n");
+	scanf("%d", &teste);
+	printf("------------------------\n");
+				
+	system("cls");
+}
+
+void exe4() {
+	float salario, vendas, comissao, total;
+	int teste;
+			
+	printf("Quanto voce ganha de salario: \n");
+	scanf("%f", &salario);
+			
+	printf("Qual o valor das vendas esse mes: \n");
+	scanf("%f", &vendas);
+			
+	comissao = 0.15 * (salario + vendas);
+			
+	total = comissao + salario;
+			
+	printf("Esse e seu salario: \n%.2f \n", total);
+			
+	printf("\n");
+			
+	printf("Insira qualquer coisa para continuar para continuar.\n");
+	scanf("%d", &teste);
+	printf("------------------------\n");
+				
+	system("cls");
+}
+
+void exe5() {
+	int num1, num2, num3, num4, soma, media, prod, teste;
+				
+	printf("Digite quatro numeros (com espacamento): \n");
+	scanf("%d %d %d %d", &num1, &num2, &num3, &num4);
+			
+	soma = num1 + num2 + num3 + num4;
+	media = (num1 + num2 + num3 + num4) / 4;
+	prod = num1 * num2 * num3 * num4;
+				
+	printf("A soma entre os numeros e: %d \n", soma);
+	printf("A media entre os numeros e: %d \n", media);
+	printf("O produtorio entre os numeros e: %d \n", prod);
+			
+	printf("\n");
+			
+	printf("Insira qualquer coisa para continuar para continuar.\n");
+	scanf("%d", &teste);
+	printf("------------------------\n");
+				
+	system("cls");
+}
+
+void exe6() {
+	int dias, meses, anos, teste; 
+			    
+	printf("Quantos dias voce viveu? ");
+	scanf("%d", &dias);
+				
+	anos = dias / 365;
+	meses = dias / 30;
+				
+	printf("\nVoce viveu %.1d dias.", dias);
+	printf("\nVoce viveu %.1d meses.", meses);
+	printf("\nVoce viveu %.1d anos.", anos);
+			
+	printf("\n");
+			
+	printf("Insira qualquer coisa para continuar para continuar.\n");
+	scanf("%d", &teste);
+	printf("------------------------\n");
+				
+	system("cls");
+}
+
+void exe7() {
+	float raio, volume;
+	float pi = 3.14159;
+	int teste;
+				
+	printf("Digite o valor do raio de uma esfera, para calcularmos o volume: \n");
+	scanf("%f", &raio);
+				
+	volume = (4/3.0) * pi * pow(raio, 3);
+				
+	printf("O volume da esfera de raio %.2f e igual a %.2f \n", raio, volume);
+			
+	printf("Insira qualquer coisa para continuar para continuar.\n");
+	scanf("%d", &teste);
+	printf("------------------------\n");
+				
+	system("cls");
+}
+
+void exe8() {
+	double coordX1, coordX2, coordY1, coordY2, expo1, expo2, dist;
+	int teste;
+				
+	printf("Digite a primeira coordenada x: ");
+	scanf("%lf", &coordX1);
+				
+	printf("Digite a primeira coordenada y: ");
+	scanf("%lf", &coordY1);
+			
+  	printf("Digite a segunda coordenada x: ");
+	scanf("%lf", &coordX2);
+				
+	printf("Digite a segunda coordenada y: ");
+	scanf("%lf", &coordY2);
+				
+	dist = sqrt((pow(coordX1-coordX2, 2)) + (pow((coordY1-coordY2), 2)));
+				
+	printf("A distancia entre os pontos e de: %.2f\n", dist);
+	printf("\n");
+			
+	printf("Insira qualquer coisa para continuar para continuar.\n");
+	scanf("%d", &teste);
+	printf("------------------------\n");
+				
+	system("cls");
+}
+
+int main(int argc, char *argv[]) {
+	
+	int ativo = 1;
+	int menu, teste;
+	
+	while(ativo == 1) {
+		
+		printf("Selecione uma letra para acessar o exercicio (1 - 8), insira 0 para finalizar: ");
+		scanf("%d", &menu);
+		
+		switch(menu) {
+			case 0:
+				printf("Programa finalizado\n");
+				ativo = 0;
+			break;
+			
+			case 1:
+				exe1();
+			break;
+			
+		  	case 2:
+		  		exe2();
+			break;
+			
+		  	case 3:
+			  	int n, valor, resto;
+			    int b64, b32, b16, b8, b4, b2, b1;
+			
+			    printf("Digite um numero positivo (n <= 64): ");
+			    scanf("%d", &n);
+			
+			    if (n > 64) {
+			        printf("Numero invalido!\n");
+			        return 1;
+			    } else if (n < 0) {
+			        printf("Numero invalido!\n");
+			        return 1;
+			    }
+			
+			    valor = n;
+			
+			    b64 = valor / 64;
+			    resto = valor % 64;
+			    valor = resto;
+			
+			    b32 = valor / 32;
+			    resto = valor % 32;
+			    valor = resto;
+			
+			    b16 = valor / 16;
+			    resto = valor % 16;
+			    valor = resto;
+			
+			    b8 = valor / 8;
+			    resto = valor % 8;
+			    valor = resto;
+			
+			    b4 = valor / 4;
+			    resto = valor % 4;
+			    valor = resto;
+			
+			    b2 = valor / 2;
+			    resto = valor % 2;
+			    valor = resto;
+			
+			    b1 = valor / 1;
+			
+			    printf("Valor em binario: ");
+			
+			    if (b64 == 1) { printf("%d", b64); } else {printf("%d", b64);}
+			    if (b32 == 1) { printf("%d", b32); } else {printf("%d", b32);}
+			    if (b16 == 1) { printf("%d", b16); } else {printf("%d", b16);}
+			    if (b8  == 1) { printf("%d", b8);  } else {printf("%d", b8);}
+			    if (b4  == 1) { printf("%d", b4);  } else {printf("%d", b4);}
+			    if (b2  == 1) { printf("%d", b2);  } else {printf("%d", b2);}
+			    if (b1  == 1) { printf("%d", b1);  } else {printf("%d", b1);}
+			
+			    printf("\n");
+			
+				printf("Insira qualquer coisa para continuar para continuar.\n");
+				scanf("%d", &teste);
+			  	printf("------------------------\n");
+				
+				system("cls");
+			break;
+			
+			case 4:
+				exe4();
+			break;
+			
+			case 5:
+				exe5();
+			break;
+	
+			case 6:
+				exe6();
+			break;
+
+			case 7:
+				exe7();
+			break;
+			
+			case 8:
+				exe8();
+			break;
+		    default:
+		    	printf("Codigo invalido\n");
+		    break;
+		}
+	}
+
+  return 0;
+}	
