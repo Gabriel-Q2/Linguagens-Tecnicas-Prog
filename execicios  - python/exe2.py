@@ -1,9 +1,3 @@
-def helloworld(string): 
-    print(string)
-
-
-helloworld("print")
-
 idade = int(input("Digite sua idade: "))
 
 tituloEleitor = input("Possui titulo de eleitor? ")
