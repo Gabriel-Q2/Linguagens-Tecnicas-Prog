@@ -1,0 +1,15 @@
+https://colab.research.google.com/drive/1kYvoFv5uxMTwXZeMzqSMfyoLvY8e7p_7?usp=drive_link
+
+
+
+
+
+
+
+
+
+
+
+Algoritmo-----> Passo a passo executado de acordo com comandos , NÃO pode possuir subjetividade e É finito.
+
+Logica------> Ligada diretamente ao senso comum e ao senso científico,
