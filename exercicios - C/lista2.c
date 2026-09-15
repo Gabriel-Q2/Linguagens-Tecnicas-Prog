@@ -69,7 +69,7 @@ int main(int argc, char *argv[]) {
 //exercicio 5
 
   float graus, radianos, pi;
-  pi = 3,141592;
+  pi = 3.141592;
     	
   printf("Digite os graus: ");
   scanf("%f", &graus);
