@@ -5,6 +5,7 @@ int multDigito(int digito, int valor) {
 }
 
 int main() {
+    //cpf
     int num1, num2, num3, num4, num5, num6, num7, num8, num9, num10, num11, soma1, soma2, v10, v11;
 
     printf("Digite o seu CPF (Sem pontuacao): ");
@@ -42,6 +43,30 @@ int main() {
     } else {
         printf("CPF INvalido!\n");
     }
+
+     //temperatura
+    float temp, resultado;
+    int convert;
+    
+    printf("Deseja converter para Celsius (1) ou Fahrenheit (2)?\n");
+    scanf("%d", &convert);
+    
+    switch(convert) {
+    	case 1:
+    		printf("Digite a temp em F para C: \n");
+    		scanf("%f", &temp);
+    		resultado = (temp - 32.0) * 5.0/9.0;
+    		printf("A temperatura convertida eh: %.2f", resultado);
+    	break;
+    	case 2:
+    		printf("Digite a temp em C para F: \n");
+    		scanf("%f", &temp);
+    		resultado = (temp * 9.0/5.0) + 32.0;
+    		printf("A temperatura convertida eh: %.2f", resultado);
+    	break;
+    	default:
+    		printf("Entrada invalida!\n");
+	}
 
     return 0;
 }
