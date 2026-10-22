@@ -20,6 +20,7 @@ int main(int argc, char *argv[]) {
 	for (i = 0; i < j; i++, j--) {
 		if (palavra[i] != palavra[j]) {
 			pal = 0; 
+			break;
 		}
 	}
 	
